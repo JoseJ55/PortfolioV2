@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: blue;
+    --link-text-color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+/* -------------------------header-------------------------- */
+
+#main-home{
+    background-color: var(--background-color);
+}
+
+#home-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../images/homeImages/city_background.jpg');
+    background-position: center;
+}
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#nav-links{
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#nav-links li {
+    display: inline-block;
+    height: auto;
+    padding: 3vh 0;
+}
+
+#nav-links a{
+    padding: 3vh 2vw;
+    margin: 0 .5vw;
+    text-decoration: none;
+    font-size: 150%;
+    color: var(--link-text-color);
+}
+
+#page-title{
+    text-align: center;
+    padding: 20%;
+    color: var(--link-text-color);
+}
+
+/* --------------------about section ------------------------ */
+#about{
+    width: 100%;
+}
+
+#about-area{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    padding: 3vh 1vw;
+}
+
+#profile-image{
+    width:30%;
+    height: auto;
+    border: grey 4px solid;
+}
+
+#about-me{
+    width: 70%;
+    height: auto;
+    padding: 2vh 2vw;
+}
+
+#about-title{
+    width: 100%;
+    margin-bottom: 1vh;
+    font-size: 160%;
+}
+
+#about-desc{
+    width: 100%;
+    font-size: 120%;
+    padding: 0 2vw;
+}
+
+/* --------------------project section----------------------- */
+#projects{
+    width: 100%;
+}
+
+#projects-area{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+}
+
+#project-title{
+    width: 100%;
+    text-align: center;
+    font-size: 160%;
+}
+
+.project-heads{
+    width: 100%;
+    border: grey 4px solid;
+    margin: 1vh 0;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.project-name{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10vh 0;
+    font-size: 120%;
+}
+
+/* -------------------contact section------------------------ */
+#contact{
+    width: 100%;
+    padding: 1vh 0;
+}
+
+#contact-area{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: grey 4px solid;
+    background-color: lightgrey;
+    padding: 1vh;
+}
+
+#contact-title{
+    width:100%;
+    margin: auto;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 160%;
+}
+
+#contact-email{
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 120%;
+}
+
+#contact-phone{
+    width:100%;
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 120%;
+}
+
+/* ----------------resume section---------------------------- */
+#resume{
+    width: 100%;
+}
+
+#resume-area{
+    width: 70%;
+    margin:auto;
+    padding: 3vh 0;
+}
+
+#resume-title{
+    width: 100%;
+    text-align: center;
+    font-size: 160%;
+    padding: 1vh 0;
+}
+
+#resume-text{
+    width: 100%;
+    border: grey 4px solid;
+    padding: 1vh 2vw;
+    background-color: lightgrey;
+    font-size: 120%;
+}
+
+
+/* -----------------responsize mobile------------------------ */
+@media only screen and (max-width: 600px){
+    /* header section */
+    #navlinks{width: 80%}
+    #nav-links a{font-size: 100%;}
+
+    /* about section */
+    #about-area{flex-direction: column;}
+    #profile-image{width:100%;}
+    #about-me{width: 100%;}
+
+    /* contact section */
+    #contact-area{
+        width: 70%;
+    }
+
+    /* resume section */
+    #resume-text{
+        width: 89%;
+        padding: 0 5%;
+        font-size: 90%;
+    }
+}
