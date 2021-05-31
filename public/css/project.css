@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color: rgb(255, 255, 255);
+    --text-hover: rgb(0, 0, 0);
+    --main-background: blue;
+    --secondary-background: rgb(0, 68, 255);
+    --tran-back: rgb(0, 0, 0, 0.5)
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.project-titles{
+    padding: 3vh 0;
+    font-size: 160%;
+    text-align: center;
+}
+
+/* ---------------------------header--------------------------- */
+#nav{
+    background-color: var(--tran-back);
+    padding: 3vh 3vw;
+}
+
+#nav-back{
+    font-size: 130%;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#nav-back:hover{
+    color: var(--text-hover);
+    text-decoration: underline;
+}
+
+#project-header{
+    /* padding: 4vh 0; */
+    background-color: var(--main-background);
+}
+
+#project-header-title{
+    font-size: 160%;
+    color: var(--text-color);
+    text-align: center;
+    padding: 4vh 0;
+}
+
+/* ----------------------------description-------------------- */
+#project-description{
+    background-color: var(--secondary-background);
+}
+
+#description{
+    width: 80%;
+    margin: auto;
+    padding: 5vh 0;
+}
+
+#description-text{
+    width: 100%;
+    font-size: 120%;
+}
+
+/* ---------------------------images------------------------- */
+#project-images{
+    background-color: var(--main-background);
+    text-align: center;
+}
+
+/* #project-images-title{
+    padding: 3vh 0;
+    font-size: 160%;
+} */
+
+#project-img{
+    width: 70%;
+    margin: 2vh 0;
+}
+
+/* ----------------------------code-------------------------- */
+#project-code{
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2vh;
+}
+
+/* #project-code-title{
+    padding: 3vh 0;
+    font-size: 160%;
+    text-align: center;
+} */
+
+#code{
+    background-color: white;
+    border: grey 4px solid;
+    width: 40%;
+    margin: auto;
+    white-space:pre-line;
+    padding: 1vh 1vw;
+}
+
+/* ------------------------links--------------------------- */
+#project-links{
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3vh;
+}
+
+/* #project-links-title{
+    text-align: center;
+    font-size: 160%;
+    padding: 3vh 0;
+} */
+
+#links-list{
+    width: 30%;
+    margin: auto;
+    background-color: aqua;
+    border: grey 4px solid;
+    padding: 3vh 5vw;
+    font-size: 120%;
+    list-style-type: none;
+}
+
+/* ----------------responsive------------------------------- */
+@media only screen and (max-width: 600px){
+    /* description */
+    #description-text{
+        font-size: 100%;
+    }
+
+    /* images */
+    #project-img{
+        width: 80%;
+    }
+
+    /* code */
+    #code{
+        width: 80%;
+        padding: 2vh 3vw;
+
+    }
+
+    /* links */
+    #links-list{
+        width: 60%;
+    }
+}
